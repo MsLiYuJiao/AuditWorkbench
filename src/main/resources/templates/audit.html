@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>被审计机构用户</title>
+  <link rel="stylesheet" th:href="@{/css/audit.css}" />
+  <script type="text/javascript" src="@{/js/jquery-1.8.1.min.js}" ></script>
+ </head>
+ <body>
+	<div class="boody">
+		<!-- 被审机构  -->
+		<div class="business">
+			<table>
+				<tr>
+					<th>&nbsp;被审机构</th>
+				</tr>
+				<tr>
+					<th>
+						<span>&nbsp;业务类型</span>
+						<select>
+							<option></option>
+							<option>业务类型</option>
+						</select>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						&nbsp;
+						<a href=""><img th:src="@{/img/增加.png}" class="img-1"/>&nbsp;<span>添加</span></a>
+						&nbsp;&nbsp;
+						<a href=""><img th:src="@{/img/删除筛选项.png}" class="img-2"/>&nbsp;<span>删除</span></a>
+						&nbsp;&nbsp;
+						<a href=""><img th:src="@{/img/编辑.png}" class="img-3"/>&nbsp;<span>编辑</span></a>
+					</th>
+				</tr>
+				
+				<tr>
+					<th>
+						<button>
+							<label for="menu-toggle">
+								<img th:src="@{/img/文件夹.png}" />
+       						</label>
+						</button>
+						<input type="checkbox" id="menu-toggle"/>
+        				<ul id="menu">
+            				<li><img th:src="@{/img/文件夹.png}" />&nbsp;<a href="#">张三的项目</a></li>
+            				<li><img th:src="@{/img/文件夹.png}" />&nbsp;<a href="#">李四的项目</a></li>
+            				<li><img th:src="@{/img/文件夹.png}" />&nbsp;<a href="#">王五的项目</a></li>
+        				</ul>
+					</th>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- 被审项目  -->
+		<div class="organ">
+			<table>
+				<tr>
+					<th>机构名称</th>
+					<th>部门开展业务</th>
+					<th>上次稽核时间</th>
+					<th>成立时间</th>
+					<th>财务账单</th>
+					<th>信用柜台编码</th>
+				</tr>
+				
+				<tr>
+					<td>XXXX</td>
+					<td>XXXX</td>
+					<td>XXXX</td>
+					<td>XXXX</td>
+					<td>XXXX</td>
+					<td>XXXX</td>
+				</tr>
+			</table>
+			
+		</div>
+		
+		<!-- 添加被审用户 -->
+		<div class="addition">
+			<table>
+				<tr>
+					<th colspan="6">
+						&nbsp;
+						<a href=""><img th:src="@{/img/增加.png}" class="img-4"/>&nbsp;<span>添加</span></a>
+						&nbsp;&nbsp;
+						<a href=""><img th:src="@{/img/删除筛选项.png}" class="img-5"/>&nbsp;<span>删除</span></a>
+						&nbsp;&nbsp;
+						<a href=""><img th:src="@{/img/编辑.png}" class="img-6"/>&nbsp;<span>编辑</span></a>
+					</th>
+				</tr>	
+				
+				<tr>
+					<th>用户名</th>
+					<th>姓名</th>
+					<th>邮箱</th>
+					<th>电话</th>
+					<th>RTX</th>
+					<th>状态</th>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+</body>
+</html>

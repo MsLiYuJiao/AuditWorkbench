@@ -1,0 +1,146 @@
+body a{
+	margin: 0xp;
+	padding: 0px;
+	text-decoration: none;
+}
+
+.boody{
+	border: 1px solid red;
+	width: 100%;
+	height: 648px;	
+	font-size: 15px;
+}
+
+.business{
+	border: 1px solid royalblue;
+	width: 300px;
+	height: 646px;
+}
+
+.addition{
+	border: 1px solid darkred;
+	width: 960px;
+	height: 326px;
+	margin-top: -328px;
+	float: right;
+}
+
+.business table th{
+	border: 1px solid black;
+	width: 300px;
+	height: 30px;
+	text-align: left;
+}
+
+.business table tr th select{
+	float: right;
+	margin-top: 2px;
+}
+
+.business table tr th button{
+	width: 295px;
+	height: 30px;
+}
+
+.business table tr th button img{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.img-1{
+	widows: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+}
+
+.img-2{
+	widows: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+}
+
+.img-3{
+	widows: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+}
+
+#menu-toggle{
+    display: none; 
+}
+#menu {
+    display: none;
+    list-style: none;
+    width:200px;
+}
+
+#menu-toggle:checked + #menu {
+    display: block;
+}
+
+#menu img{
+ 	width: 20px;
+ 	height: 20px;
+ 	margin-left: -30px;
+ 	margin-top: 5px;
+}
+
+.organ{
+	margin-top: -648px;
+	float: right;
+	border: 1px solid aquamarine;
+	width: 960px;
+	height: 320px;
+}
+
+.organ table{
+	border: 1px solid black;
+	width: 958px;
+}
+
+.organ table tr th{
+	border: 1px solid black;
+	height: 20px;
+	text-align: left;
+}
+
+.organ table tr td{
+	border: 1px solid black;
+	height: 20px;
+}
+
+.addition table{
+	border: 1px solid black;
+	width: 958px;
+}
+
+.addition table tr th{
+	border: 1px solid black;
+	height: 20px;
+	text-align: left;
+}
+
+.addition table tr td{
+	border: 1px solid black;
+	height: 20px;
+}
+
+.img-4{
+	widows: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+}
+
+.img-5{
+	widows: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+}
+
+.img-6{
+	widows: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>我的工作台</title>
+  <meta charset="utf-8"/>
+  <link href="assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+
+  <div class="header">
+
+  </div>
+   <div class="content">
+    <div class="dl-main-nav">
+      <ul id="J_Nav"  class="nav-list ks-clear">
+        <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">首页</div></li>
+       
+      </ul>
+    </div>
+    <ul id="J_NavContent" class="dl-tab-conten">
+
+    </ul>
+   </div>
+<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="./assets/js/bui.js"></script>
+
+ <script>
+    BUI.use('common/main',function(){
+      var config = [{
+          id:'menu', 
+          homePage : 'code',
+          menu:[{
+              text:'代办事项',
+              items:[
+                {id:'code',text:'代办事项',href:'main/code.html',closeable : false},
+              ]
+            },{
+              text:'已审批事项',
+              items:[
+                {id:'operation',text:'已审批事项',href:'main/operation.html'},
+              ]
+            },{
+              text:'我的消息',
+              items:[
+                {id:'resource',text:'我的消息',href:'main/resource.html'},
+              ]
+            },{
+              text:'我的文件夹',
+              items:[
+              	{id:'document',text:'我的文件夹',href:'main/document.html'}
+              ]
+            },{
+              text:'系统链接',
+              items:[
+              	{id:'',text:'系统链接',href:''},
+              ]
+            }]
+          }];
+      new PageUtil.MainPage({
+        modulesConfig : config
+      });
+    });
+  </script>
+  
+
+
+</body>
+</html>

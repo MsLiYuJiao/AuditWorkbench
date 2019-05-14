@@ -1,0 +1,71 @@
+.s{
+    	width: 900px;
+    	height: 540px;
+    	float: left;
+    	margin-left: 36px;
+    	font-size: 15px;
+    	margin-top: -8px;
+    }
+	
+	.tab table{
+		border: 1px solid silver;
+		width: 1128px;
+		height: 30px;
+		margin-left: -43px;
+		text-align: left;
+		line-height: 30px;
+	}
+	
+	.img1{
+		width: 20px;
+		height: 20px;
+		margin-bottom: -3px;
+	}
+	
+	.img2{
+		width: 20px;
+		height: 20px;
+		margin-bottom: -3px;
+	}
+	
+	.img3{
+		width: 18px;
+		height: 18px;
+		margin-bottom: -3px;
+	}
+	
+	.img4{
+		width: 18px;
+		height: 18px;
+		margin-bottom: -3px;
+	}
+	
+	.sp1{
+		float: right;
+	}
+	
+	.sp1 button{
+		width: 30px;
+		height: 28px;
+	}	
+	
+	.sp1 button img{
+		width: 15px;
+		height: 15px;
+		text-align: center;
+		line-height: 20px;
+	}
+	
+	.sp1 input{
+		width: 150px;
+		height: 22px;
+	}
+	
+	.sp1 button{
+		margin-left: -4px;
+	}
+	
+	.sp1 button img{
+		margin-bottom: -3px;
+	}
+	
