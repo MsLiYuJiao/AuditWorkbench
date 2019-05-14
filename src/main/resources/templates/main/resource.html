@@ -1,98 +1,129 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <meta charset="utf-8" />
-  <title></title>
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <style type="text/css">
-  	.s{
-    	width: 980px;
-    	height: 540px;
-    	float: left;
-    	margin-left: 36px;
-    	font-size: 15px;
-    	margin-top: -7px;
-    }
-	
-	.tab table{
-		border: 1px solid silver;
-		width: 1127px;
-		height: 30px;
-		margin-left: -43px;
-		text-align: left;
-		line-height: 30px;
-	}
-	
-	.img3{
-		width: 18px;
-		height: 18px;
-		margin-bottom: -3px;
-	}
-	
-	.img2{
-		width: 18px;
-		height: 18px;
-		margin-bottom: -3px;
-	}
-	
-	.sp1{
-		float: right;
-	}
-	
-	.sp1 button{
-		width: 30px;
-		height: 28px;
-	}	
-	
-	.sp1 button img{
-		width: 15px;
-		height: 15px;
-		text-align: center;
-		line-height: 20px;
-	}
-	
-	.sp1 input{
-		width: 150px;
-		height: 22px;
-	}
-	
-	.sp1 button{
-		margin-left: -4px;
-	}
-	
-	.sp1 button img{
-		margin-bottom: -3px;
-	}
-	
-  	</style>
- </head>
- <body>
-	<div class="s">
-       	<div class="tab">
-       		<table border="1">
-       			<tr class="ta1">
-       				<th colspan="5">
-       					&nbsp;&nbsp;
-       					<a href=""><img src="../assets/img/删除筛选项.png" class="img3"/></a>
-       					<span>删除</span>	
-       					&nbsp;&nbsp;
-       					<a href=""><img src="../assets/img/勾选 (1).png" class="img2"/></a>
-       					<span>标记为已读</span>
-       					<div class="sp1">
-       						<input type="text" placeholder="请输入关键字，回车查询...." />
-       						<button><img src="../assets/img/搜索--1.png"/></button>
-       					</div>
-       				</th>
-       			</tr>
-       			<tr>
-       				<th><input type="checkbox"/></th>
-       				<th>消息类型</th>
-       				<th>内容</th>
-       				<th>发送者</th>
-       				<th>发送时间</th>
-       			</tr>
-  			</table>
-  		</div>
-  	</div>
-<body>
-</html>  
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我的消息</title>
+
+		<link href="../assets/css/myGZT.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script src="js/bootstrap.js"></script>
+		<style>
+			a{
+				line-height: 35px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<div class="top" style="margin-top: -10px;height: 40px;line-height: 40px;">
+				我的消息
+			</div>
+			<div>
+				<div class="col-md-12">
+					<div id="chuli" style="margin-left: -15px;">
+						<div class="col-md-9">
+							<a href=""><span class="glyphicon glyphicon-remove"></span>删除 &nbsp;&nbsp;</a>
+							<a href=""><span class="glyphicon glyphicon-ok"></span>标记为已读</a>
+						</div>
+
+						<div class="input-group col-md-3" style="position: fixed;right: 30px;margin-top: 5px;">
+							<input type="text" placeholder="请输入搜索内容" class="form-control input-sm" />
+							<a href="" class="input-group-addon">百度搜索</a>
+						</div>
+					</div>
+					<table class="table table-head-bordered table-hover" style="margin-top: 40px;">
+						<tr style="background-color: #EBECED;">
+							<th><input type="checkbox" /></th>
+							<th>消息类型</th>
+							<th>内容</th>
+							<th>发送者</th>
+							<th>发送时间</th>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+					</table>
+					<div id="in" style="width: 99%;height: 40px;">
+						<ul>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-fast-backward"></span></a>
+							</li>
+							<li>第<input type="text" style="width: 50px;height: 20px;" />页&nbsp;&nbsp;&nbsp;共0页</li>
+
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-fast-forward"></span></a>
+							</li>
+
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+
+							<li style="float: right;margin-right: 20px;">
+								<a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<body>
+
+</html>

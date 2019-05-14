@@ -1,0 +1,17 @@
+	ul li {
+		float: left;
+		margin-left: 20px;
+		list-style-type: none;
+	}
+	
+	#in {
+		background-color: #BCD3F5;
+		border-bottom: 20px solid #90B7EA;
+		height: 50px;
+		width: 100%;
+		position: fixed;
+		bottom: 30px;
+	}
+	
+
+			

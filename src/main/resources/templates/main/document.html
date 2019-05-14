@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" href="../assets/css/document.css" />
-</head>
-<body>
-		<div class="s">
-       	<div class="tab">
-       		<table border="1">
-       			<tr class="ta1">
-       				<th colspan="6">
-       					<a href=""><img src="../assets/img/上传.png" class="img1"/></a>
-       					<span>上传</span>	
-       					&nbsp;&nbsp;
-       					<a href=""><img src="../assets/img/下载 (1).png" class="img2"/></a>
-       					<span>下载</span>
-       					&nbsp;&nbsp;
-       					<a href=""><img src="../assets/img/删除筛选项.png" class="img3"/></a>
-       					<span>删除</span>
-       					&nbsp;&nbsp;
-       					<a href=""><img src="../assets/img/刷新.png" class="img4"/></a>
-       					<span>刷新</span>
-       					<div class="sp1">
-       						<input type="text" placeholder="请输入关键字，回车查询...." />
-       						<button><img src="../assets/img/搜索--1.png"/></button>
-       					</div>
-       				</th>
-       			</tr>
-       			<tr>
-       				<th></th>
-       				<th>文件名</th>
-       				<th>类型</th>
-       				<th>时间</th>
-       				<th>消息</th>
-       				<th>是否可用</th>
-       			</tr>
-  			</table>
-  		</div>
-  	</div>
+		<meta charset="UTF-8">
+		<title>我的文件夾</title>
+		<link href="../assets/css/myGZT.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+		<script src="js/bootstrap.js"></script>
+
+	</head>
+
+	<body>
+
+		<div>
+			<div class="top" style="margin-top: -10px;line-height: 40px;height: 40px;">
+				我的文件夾
+			</div>
+			<div>
+				<div class="col-md-12">
+					<div id="chuli" style="margin-left: -15px;height:50px;padding: 10px;">
+						<div class="col-md-9">
+							<a href=""><span class="glyphicon glyphicon-arrow-up " style="color: blue;">上传</span></a>
+								<a href=""><span class="glyphicon glyphicon-save">下载</span></a>;
+								<a href=""><span class="glyphicon glyphicon-remove" style="color: red;">删除</span></a>
+								<a href=""><a href="#"><span class="glyphicon glyphicon-refresh">刷新</span></a>
+
+						</div>
+
+						<div class="input-group col-md-3" style="position: fixed;right: 30px;margin-top: 5px;">
+							<input type="text" placeholder="请输入搜索内容" class="form-control input-sm" />
+							<a href="" class="input-group-addon">百度搜索</a>
+						</div>
+					</div>
+					<table class="table table-hover" style="margin-top: 100px;">
+							<tr style="background-color: #E8E9EE;">
+						<th></th>
+						<th>文件名</th>
+						<th>类型</th>
+						<th>时间</th>
+						<th>信息</th>
+						<th>是否相同</th>
+					</tr>
+					<tr>
+						<th></th>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td>
+					</tr>
+					
+					</table>
+					<div id="in" style="width: 99%;height: 40px;">
+						<ul>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-fast-backward"></span></a>
+							</li>
+							<li>第<input type="text" style="width: 50px;height: 20px;" />页&nbsp;&nbsp;&nbsp;共0页</li>
+
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-fast-forward"></span></a>
+							</li>
+
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+
+							<li style="float: right;margin-right: 20px;">
+								<a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 	</body>
+
 </html>

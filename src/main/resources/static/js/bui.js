@@ -25684,10 +25684,7 @@ define('bui/tab/navtab',['bui/common','bui/menu'],function(require){
          */
         tpl : {
           view : true,
-          value : '<div class="tab-nav-bar">'+
-            '<s class="tab-nav-arrow arrow-left"></s><div class="tab-nav-wrapper"><div class="tab-nav-inner"><ul class="'+CLS_NAV_LIST+'"></ul></div></div><s class="tab-nav-arrow arrow-right"></s>'+
-            '</div>'+
-            '<div class="tab-content-container"></div>'
+          value : '<div class="tab-content-container"></div>'
         },
         xview : {
           value : navTabView

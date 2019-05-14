@@ -1,0 +1,91 @@
+
+body{
+	height:720px;
+	margin-top: -40px;
+	z-index: auto;
+}
+
+
+			.top{
+				height: 35px;
+				width: 100%;
+				padding-left: 50px;
+				border:1px solid #A2C4F7;
+				background-color: #A2C4F7;
+				margin-top: 35px;
+				color: black;
+			}
+
+			#rows div {
+				height: auto;
+			}
+			
+			.con {
+				width: 100%;
+			}
+			
+			.con div {
+				background-color: white;
+			}
+			
+			* {
+				margin: 0px 0px;
+				padding: 0px 0px;
+				padding-top: 3px;
+				font-size: 15px;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+			
+			#toggle {
+				width: 105%;
+				height: 30px;
+			}
+			
+			#a {
+				width: 105%;
+				padding: 30px;
+			}
+			
+		
+			ul li {
+				float: left;
+				margin-left: 20px;
+			}
+			
+			#chuli {
+				margin-top: -10px;
+				color: #9D9D9D;
+				background-color: #BCD3F5;
+				width: 99%;
+				position: absolute;
+				left: 30px;
+
+			}
+			#chuli span{
+				color: #27C148;
+				margin-left: 30px;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			#in {
+				background-color: #A2C4F7;
+				width: 91%;
+           		position: fixed;
+            	bottom:170px;
+            	right: 0;
+
+				
+
+			}
+			#lists{
+				
+				height: 780px;
+
+
+			}
+			
+			table{
+				margin-top: 30px;
+			}

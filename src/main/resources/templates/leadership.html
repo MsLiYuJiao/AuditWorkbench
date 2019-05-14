@@ -1,64 +1,74 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <title>我的工作台</title>
-  <meta charset="utf-8"/>
-  <link href="assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/bui-min.css" rel="stylesheet" type="text/css" />
-   <link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
- </head>
- <body>
 
-  <div class="header">
-  	
-      <div class="dl-title">
-          <span class="lp-title-port">领导工作台</span>
-      </div>
-    </div>
-  </div>
-   <div class="content">
-    <div class="dl-main-nav">
-      <ul id="J_Nav"  class="nav-list ks-clear">
-        <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">首页</div></li>
-       
-      </ul>
-    </div>
-    <ul id="J_NavContent" class="dl-tab-conten">
+	<head>
+		<title>领导工作台</title>
+		<meta charset="utf-8" />
+		<link href="assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
+	</head>
 
-    </ul>
-   </div>
-<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
-<script type="text/javascript" src="./assets/js/bui.js"></script>
-r
- <script>
-    BUI.use('common/main',function(){
-      var config = [{
-          id:'menu', 
-          homePage : 'leadcode',
-          menu:[{
-              text:'代办事项',
-              items:[
-                {id:'leadcode',text:'代办事项',href:'main/leadcode.html',closeable : false},
-              ]
-            },{
-              text:'计划项目进度表',
-              items:[
-                {id:'design',text:'计划项目进度表',href:'main/design.html'},
-              ]
-            },{
-              text:'人员任务总览',
-              items:[
-                {id:'pandect',text:'人员任务总览',href:'main/pandect.html'},
-              ]
-            }]
-          }];
-      new PageUtil.MainPage({
-        modulesConfig : config
-      });
-    });
-  </script>
-  
+	<body>
 
+		<div class="header">
 
-</body>
+			<div class="dl-title" style="color: white;height: 50px;">
+				<span class="lp-title-port">领导工作台</span>
+
+			</div>
+		</div>
+		<div class="content">
+			<div class="dl-main-nav">
+				<ul id="J_Nav" class="nav-list ks-clear">
+					<li class="nav-item dl-selected">
+						<div class="nav-item-inner nav-home">首页</div>
+					</li>
+
+				</ul>
+			</div>
+			<ul id="J_NavContent" class="dl-tab-conten">
+
+			</ul>
+		</div>
+		<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="./assets/js/bui.js"></script>
+		r
+		<script>
+			BUI.use('common/main', function() {
+				var config = [{
+					id: 'menu',
+					homePage: 'leadcode',
+					menu: [{
+						text: '代办事项',
+						items: [{
+							id: 'leadcode',
+							text: '代办事项',
+							href: 'main/leadcode.html',
+							closeable: false
+						}, ]
+					}, {
+						text: '计划项目进度表',
+						items: [{
+							id: 'design',
+							text: '计划项目进度表',
+							href: 'main/design.html'
+						}, ]
+					}, {
+						text: '人员任务总览',
+						items: [{
+							id: 'pandect',
+							text: '人员任务总览',
+							href: 'main/pandect.html'
+						}, ]
+					}]
+				}];
+				new PageUtil.MainPage({
+					modulesConfig: config
+				});
+			});
+		</script>
+
+	</body>
+
 </html>

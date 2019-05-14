@@ -1,97 +1,175 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <title> 首页代码结构</title>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="../assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/page-min.css" rel="stylesheet" type="text/css" />  
-    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css"/>
-   <style type="text/css">
-   	.span1{
-   		width: 170px;
-   		height: 570px;
-   		margin-left: -10px;
-   		margin-top: -20px;
-   		border-left: 1px solid gray;
-   		border-right: 4px solid grey;
-   		background-color: #E0E0E0;
-   	}
-   	
-   	.span1 button{
-   		width: 170px;
-   		height: 30px;
-   		text-align: left;
-   		line-height: 30px;
-   	}
-   	
-    .s{
-    	width: 530px;
-    	height: 540px;
-    	float: left;
-    	margin-left: 50px;;
-    }
+
+	<head>
+		<title> 首页代码结构</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="../assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/css/page-min.css" rel="stylesheet" type="text/css" />
+
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.js"></script>
+		<link href="../assets/css/myGZT.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div class="con">
+			
+			<div class="row" id="rows">
+				<div class="col-md-2" id="lists">
+
+					<button id="toggle">事项</button>
+					<div style="display: none;" id="a">
+						<p>事项1</p>
+						<p>事项2</p>
+						<p>事项3</p>
+						<p>事项4</p>
+					</div>
+
+				</div>
+				
+
+				<div class="col-md-10" style="border-left: 5px solid #90B7EA;height: 760px;margin-top: 00px;">
+					<div id="chuli" style="margin-left: -15px;height: 40px; line-height: 40px;"><button class="btn button-primary btn-sm" style="width: 100px;">处理</button></div>
+					<table class="table table-hover">
+						<tr style="background-color: #EBECED;">
+							<th><input type="checkbox" onclick="dianji()" id="all"/></th>
+							<th>代办类型</th>
+							<th>发送人</th>
+							<th>发送时间</th>
+							<th>操作</th>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck"/></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ck" /></td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+							<td>Data</td>
+						</tr>
+					</table>
+					<div id="in">
+						<ul>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-fast-backward"></span></a>
+							</li>
+							<li>第<input type="text" style="width: 50px;height: 20px;" />页&nbsp;&nbsp;&nbsp;共0页</li>
+
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-fast-forward"></span></a>
+							</li>
+
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+
+							<li style="float: right;margin-right: 20px;">
+								<a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+
+	<body>
+
+</html>
+
+<script>
+	$("#toggle").click(function() {
+		$("#a").toggle();
+	})
 	
-	.tab table{
-		width: 952px;
-		height: 30px;
-		margin-top: -19px;
-		margin-left: -49px;
-		text-align: left;
-		line-height: 30px;
+	//点击tr 多选框选中事件
+	$(function() { //除了表头（第一行）以外所有的行添加click事件. 
+				$("tr").slice(1).click(function() {
+							// 切换样式 
+							$(this).toggleClass("tr_active");
+							// 找到checkbox对象 
+							var chks = $("input[type='checkbox']",this); 
+							var tag = $(this).attr("tag"); if(tag=="selected"){ 
+								// 之前已选中，设置为未选中
+								$(this).attr("tag","");
+								chks.prop("checked",false); }else{ 
+									// 之前未选中，设置为选中 
+									$(this).attr("tag","selected"); 
+									chks.prop("checked",true); 
+								} 
+				}); 
+				
+				
+			
+	});
+	
+	/**
+	 * 点击头多选框其他的全部选中
+	 */
+	 function dianji() {
+ 
+		var flag = document.getElementById("all").checked;	 
+			 alert(flag)				 
+			  var cks = document.getElementsByName("ck");
+			  if (flag) {
+			   for ( var i = 0; i < cks.length; i++) {	
+			   	cks[i].checked = true;
+				}
+			   } else {
+			   for ( var i = 0; i < cks.length; i++) {
+			    cks[i].checked = false;
+			   }
+			  }
 	}
-	
-	.th1{
-		width: 30px;
-		text-align: center;
-	}
-	
-	.th1 input{
-		width: 15px;
-		height: 15px;
-		margin-top: 10px;
-	}
-	
-	.tab table tr th button{
-		width: 100px;
-		text-align: center;
-	}
-	
-   </style>
- </head>
- <body>
-    
-    <div class="container">
-     <div class="row">
-       <div class="span1">
-         <button><h4>待办类型</h4></button>
-         <ol>
-           	<li>1</li>
-           	<li>2</li>
-           	<li>3</li>
-         </ol>
-       </div>
-       <div class="s">
-       		<div class="tab">
-       			<table border="1">
-       				<tr>
-       					<th colspan="5">
-       						&nbsp;
-       						<button>处理</button>
-       					</th>
-       				</tr>
-       				<tr>
-       					<th class="th1"><input type="checkbox"></th>
-       					<th>待办类型</th>
-       					<th>发送人</th>
-       					<th>发送时间</th>
-       					<th>操作</th>
-       				</tr>
-       			</table>
-       		</div>
-       </div>
-       
-  <script type="text/javascript" src="../assets/js/jquery-1.8.1.min.js"></script>
-  <script type="text/javascript" src="../assets/js/bui-min.js"></script>
-  <script type="text/javascript" src="../assets/js/config-min.js"></script>
-<body>
-</html>  
+</script>
